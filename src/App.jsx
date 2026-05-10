@@ -6,43 +6,33 @@ import {
   Route
 } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Features from "./components/Features";
-import Dashboard from "./components/Dashboard";
-import Footer from "./components/Footer";
+import Login from "./pages/Login";
 
-function Home() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <Features />
-      <Footer />
-    </>
-  );
-}
+import Signup from "./pages/Signup";
 
-function DashboardPage() {
-  return (
-    <>
-      <Navbar />
-      <Dashboard />
-    </>
-  );
-}
+import Dashboard from "./pages/Dashboard";
 
 export default function App() {
+
   return (
+
     <BrowserRouter>
 
       <Routes>
 
-        <Route path="/" element={<Home />} />
+        <Route
+          path="/"
+          element={<Login />}
+        />
+
+        <Route
+          path="/signup"
+          element={<Signup />}
+        />
 
         <Route
           path="/dashboard"
-          element={<DashboardPage />}
+          element={<Dashboard />}
         />
 
       </Routes>
