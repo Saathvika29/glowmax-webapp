@@ -26,6 +26,10 @@ export default function Login() {
   "user",
   JSON.stringify(response.data.user)
 );
+      localStorage.setItem(
+  "token",
+  response.data.token
+);
 
 alert(response.data.message);
 

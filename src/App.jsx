@@ -6,11 +6,23 @@ import {
   Route
 } from "react-router-dom";
 
+import Landing from "./pages/Landing";
+
 import Login from "./pages/Login";
 
 import Signup from "./pages/Signup";
 
 import Dashboard from "./pages/Dashboard";
+
+import Journal from "./pages/Journal";
+
+import Hobbies from "./pages/Hobbies";
+
+import Career from "./pages/Career";
+
+import Mood from "./pages/Mood";
+
+import Profile from "./pages/Profile";
 
 export default function App() {
 
@@ -22,6 +34,11 @@ export default function App() {
 
         <Route
           path="/"
+          element={<Landing />}
+        />
+
+        <Route
+          path="/login"
           element={<Login />}
         />
 
@@ -33,6 +50,31 @@ export default function App() {
         <Route
           path="/dashboard"
           element={<Dashboard />}
+        />
+
+        <Route
+          path="/journal"
+          element={<Journal />}
+        />
+
+        <Route
+          path="/hobbies"
+          element={<Hobbies />}
+        />
+
+        <Route
+          path="/career"
+          element={<Career />}
+        />
+
+        <Route
+          path="/mood"
+          element={<Mood />}
+        />
+
+        <Route
+          path="/profile"
+          element={<Profile />}
         />
 
       </Routes>

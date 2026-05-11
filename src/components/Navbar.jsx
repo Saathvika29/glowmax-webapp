@@ -8,7 +8,23 @@ export default function Navbar() {
         <li>Home</li>
         <li>Features</li>
         <li>Support</li>
+        <button
+          onClick={() =>
+            window.location.href = "/login"
+          }
+        >
+          Login
+        </button>
+
+        <button
+          onClick={() =>
+            window.location.href = "/signup"
+          }
+        >
+          Signup
+        </button>
       </ul>
+      
 
     </nav>
   );

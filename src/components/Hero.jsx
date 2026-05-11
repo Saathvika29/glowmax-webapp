@@ -14,9 +14,13 @@ export default function Hero() {
         all in one place.
       </p>
 
-      <button onClick={() => navigate("/dashboard")}>
-        Start GlowMax
-      </button>
+      <button
+  onClick={() =>
+    window.location.href = "/signup"
+  }
+>
+  Start GlowMax
+</button>
 
     </div>
   );
