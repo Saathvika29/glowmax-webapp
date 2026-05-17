@@ -21,7 +21,7 @@ export default function Journal() {
     try {
 
       await axios.post(
-        "http://localhost:3000/api/journal/add",
+        "/_/backend/api/journal/add",
         {
           userId: user._id,
           content
@@ -44,7 +44,7 @@ export default function Journal() {
 
       const response =
         await axios.get(
-          `http://localhost:3000/api/journal/${user._id}`
+          `/_/backend/api/journal/${user._id}`
         );
 
       setJournals(response.data);

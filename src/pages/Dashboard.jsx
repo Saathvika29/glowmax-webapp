@@ -40,12 +40,12 @@ async function fetchData(){
 
     const journalResponse =
       await axios.get(
-        `http://localhost:3000/api/journal/${user._id}`
+        `/_/backend/api/journal/${user._id}`
       );
 
     const hobbyResponse =
       await axios.get(
-        `http://localhost:3000/api/hobby/${user._id}`
+        `/_/backend/api/hobby/${user._id}`
       );
 
     setJournals(

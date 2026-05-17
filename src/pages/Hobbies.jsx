@@ -24,7 +24,7 @@ export default function Hobbies() {
     try {
 
       await axios.post(
-        "http://localhost:3000/api/hobby/add",
+        "/_/backend/api/hobby/add",
         {
           userId: user._id,
           hobby,
@@ -49,7 +49,7 @@ export default function Hobbies() {
 
       const response =
         await axios.get(
-          `http://localhost:3000/api/hobby/${user._id}`
+          `/_/backend/api/hobby/${user._id}`
         );
 
       setHobbies(response.data);
