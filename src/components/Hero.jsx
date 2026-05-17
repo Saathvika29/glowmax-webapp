@@ -16,7 +16,9 @@ export default function Hero() {
 
       <button
   onClick={() =>
-    window.location.href = "/signup"
+    <Link to="/signup">
+  <button>Start GlowMax</button>
+</Link>
   }
 >
   Start GlowMax

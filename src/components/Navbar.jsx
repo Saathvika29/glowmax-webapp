@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="navbar">
@@ -10,7 +11,9 @@ export default function Navbar() {
         <li>Support</li>
         <button
           onClick={() =>
-            window.location.href = "/login"
+            <Link to="/login">
+  <button>Login</button>
+</Link>
           }
         >
           Login
@@ -18,7 +21,9 @@ export default function Navbar() {
 
         <button
           onClick={() =>
-            window.location.href = "/signup"
+           <Link to="/signup">
+  <button>Signup</button>
+</Link>
           }
         >
           Signup
